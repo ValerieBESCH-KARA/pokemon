@@ -1,0 +1,32 @@
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.type a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.type a > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.type a img {
+  width: 200px;
+  height: 200px;
+}
+
+.type a p {
+  font-size: 20px;
+}

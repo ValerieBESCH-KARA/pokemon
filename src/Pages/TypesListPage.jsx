@@ -31,7 +31,7 @@ const TypesListPage = () => {
       <h1>Types de pokemons</h1>
 
       <div className="types-bloc">
-        {data.map((types) => {
+        {data.map((types, index) => {
           return <Link to={`/pokemon/${types.name}`}>{types.name}</Link>;
         })}
       </div>

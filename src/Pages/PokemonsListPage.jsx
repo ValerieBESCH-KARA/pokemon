@@ -31,26 +31,28 @@ const PokemonListPage = () => {
     <main>
       <h1>Liste des Pokemons</h1>
 
-      <div className="pokemons-list">
-        {data.map((pokemon, index) => {
-          const url = pokemon.url.split("/")[6];
-          return (
-            <Link
-              className="pokemon-card"
-              to={`/pokemon/${pokemon.name}`}
-              key={index}
-            >
-              <div>
-                <img
-                  src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${url}.png`}
-                  alt=""
-                />
+      <div>
+        <div className="pokemons-list">
+          {data.map((pokemon, index) => {
+            const url = pokemon.url.split("/")[6];
+            return (
+              <Link
+                className="pokemon-card"
+                to={`/pokemon/${pokemon.name}`}
+                key={index}
+              >
+                <div>
+                  <img
+                    src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${url}.png`}
+                    alt=""
+                  />
 
-                <p>{pokemon.name}</p>
-              </div>
-            </Link>
-          );
-        })}
+                  <p>{pokemon.name}</p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </main>
   );

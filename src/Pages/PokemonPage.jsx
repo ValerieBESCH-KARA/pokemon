@@ -42,7 +42,7 @@ const PokemonPage = () => {
 
         <div>Types :</div>
         <div className="pokemon-type">
-          {data.types.map((typesTab) => {
+          {data.types.map((typesTab, index) => {
             return (
               <div>
                 <Link to={`/typePokemon/${typesTab.type.name}`}>
