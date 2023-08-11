@@ -1,0 +1,19 @@
+footer {
+  height: 150px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px #e71620 solid;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+footer span {
+  font-weight: bold;
+  font-size: 16px;
+}

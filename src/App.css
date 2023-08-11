@@ -1,0 +1,22 @@
+:root {
+  background-color: #e71620;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  font-family: "Nintendo U", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px auto;
+}

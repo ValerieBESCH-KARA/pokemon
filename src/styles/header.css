@@ -1,0 +1,28 @@
+header {
+  height: 100px;
+  border-bottom: 2px #e71620 solid;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-bloc {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header img {
+  width: 120px;
+  margin: 10px;
+}

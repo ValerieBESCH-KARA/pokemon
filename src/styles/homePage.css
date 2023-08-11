@@ -1,0 +1,11 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.homePage img {
+  width: 100%;
+  margin-bottom: 40px;
+}
