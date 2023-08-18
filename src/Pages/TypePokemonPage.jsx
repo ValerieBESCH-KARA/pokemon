@@ -37,6 +37,7 @@ const TypePokemonPage = () => {
           {data.pokemon.map((pokemon, index) => {
             console.log("pokemonTypePage>>>", pokemon);
             const url = pokemon.pokemon.url.split("/")[6];
+            console.log("url>>>>", url);
             return (
               <Link to={`/pokemon/${pokemon.pokemon.name}`}>
                 <div>

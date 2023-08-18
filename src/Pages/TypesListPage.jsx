@@ -12,7 +12,7 @@ const TypesListPage = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get("https://pokeapi.co/api/v2/type");
-        console.log("data TypeListPage>>>", response.data);
+        console.log("data TypeListPage>>>", response.data.results);
 
         setData(response.data.results);
         setIsLoading(false);
@@ -32,7 +32,8 @@ const TypesListPage = () => {
 
       <div className="types-bloc">
         {data.map((types, index) => {
-          return <Link to={`/pokemon/${types.name}`}>{types.name}</Link>;
+          console.log("types>>>", types.name);
+          return <Link to={`/typePokemon/${types.name}`}>{types.name}</Link>;
         })}
       </div>
     </main>

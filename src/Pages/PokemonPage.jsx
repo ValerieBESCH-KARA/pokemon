@@ -19,7 +19,7 @@ const PokemonPage = () => {
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
-        console.log(" pokemonPage>>>", error.message);
+        console.log("pokemonPage>>>", error.message);
       }
     };
 
